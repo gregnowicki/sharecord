@@ -3,6 +3,7 @@
 <table>
   <thead>
     <tr>
+      <th>#</th>
       <th>Description</th>
       <th></th>
       <th></th>
@@ -13,6 +14,7 @@
   <tbody>
     <% @pins.each do |pin| %>
       <tr>
+        <td><%= pin.id %></td>
         <td><%= pin.description %></td>
         <td><%= link_to 'Show', pin, class: "actions" %></td>
         <td><%= link_to 'Edit', edit_pin_path(pin), class: "actions" %></td>
