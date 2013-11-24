@@ -21,13 +21,15 @@ $btn-primary-bg: #1abc9c;
      font-weight: bold;
 }
 
+.actions {
+			color: #1abc9c;
+}
+
 .form-group {
 			width: 30%; 
 }
 
-.actions {
-			color: #1abc9c;
-}
+
 
 
 @import 'bootstrap';
