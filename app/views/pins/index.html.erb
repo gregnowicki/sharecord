@@ -10,7 +10,7 @@
       <% end %>
 
       <div class="panel-body">
-        <%= pin.description %>
+        <%= pin.description %><br><br>
         <div class="user">
           <%= pin.user.email if pin.user %>
         </div>
@@ -27,4 +27,14 @@
     </div>
   <% end %>
 </div>
+
+<%= will_paginate @posts %>
+
+<div class="center">
+   <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
+</div>
+
+
+
+
 
