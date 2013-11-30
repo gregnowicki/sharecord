@@ -12,7 +12,7 @@
       <div class="panel-body">
         <%= pin.description %><br><br>
         <div class="user">
-          <%= pin.user.email if pin.user %>
+          <%= pin.user.name if pin.user %>
         </div>
         <% if pin.user == current_user %>
           <%= link_to edit_pin_path(pin), class: "actions" do %>
